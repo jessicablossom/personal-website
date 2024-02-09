@@ -1,6 +1,9 @@
 import React from 'react';
 import { Container } from '@mui/material';
 import Hero from '../components/Hero';
+import Summary from '../components/Summary';
+import Skills from '../components/Skills';
+import ScrollArrow from '../components/ScrollArrow';
 import { styled } from '@mui/system';
 
 const StyledContainer = styled(Container)({
@@ -15,6 +18,9 @@ const Home = () => {
 	return (
 		<StyledContainer maxWidth='xl' disableGutters>
 			<Hero />
+			<Summary />
+			<Skills />
+			<ScrollArrow />
 		</StyledContainer>
 	);
 };

@@ -1,7 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
 const fontFamilyPrimary = '"Montserrat", sans-serif';
-const fontFamilySecondary = '"Roboto", sans-serif';
 
 const typographyTheme = createTheme({
 	typography: {
@@ -14,7 +13,14 @@ const typographyTheme = createTheme({
 		subtitle1: {
 			fontSize: '5rem',
 			fontWeight: 600,
-			color: '#8a8a8a',
+			padding: 25,
+			'--gradient-color': 'linear-gradient(to right, rgba(35, 176, 255, 1), rgba(255, 0, 153, 0.1))',
+		},
+		body1: {
+			fontSize: '2rem',
+			fontWeight: 400,
+			color: '#3d3d3d',
+			padding: 25,
 		},
 	},
 });
